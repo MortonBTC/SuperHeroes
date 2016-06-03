@@ -1,8 +1,16 @@
 <h1>SELECT VIEW WORKS</h1>
 <ul>
     <li hero-display ng-click="buyThing(hero)" ng-repeat="hero in heroes">
-        <div>{{ hero.pic }}</div>
-        <h2>{{ hero.name | cap }}</h2>
-        <p>{{ hero.events }}</p>
+        <img ng-src="{{hero.thumbnail.path + '.' + hero.thumbnail.extension}}">
+        <h2>Name: <a href ="#/events">{{ hero.name | cap }}</a></h2>
+        <h4>{{ hero.description }}</h4>
+        <div ng-repeat="result in hero.eventss.results" ng-click="eventDes(result)">{{ result.title }}
+      
+        <div hero-display ng-click="buyThing(retrn)" ng-repeat="retrn in result.heroes">
+        <img ng-src="{{retrn.thumbnail.path + '.' + retrn.thumbnail.extension}}">
+        <h2>Name: <a href ="#/select">{{ retrn.name | cap }}</a></h2>
+        <p>Total Events: {{ hero.events.available }}</p>
+        </div>
+        </div>
     </li>
 </ul>
