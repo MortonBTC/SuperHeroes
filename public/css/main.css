@@ -1,0 +1,20 @@
+body {
+  background-color: aqua; }
+
+.eventCharacters img {
+  position: relative;
+  display: inline-block;
+  height: 80px;
+  width: 80px; }
+
+.eventCharacters h2 {
+  color: blue; }
+
+.listCharacters img {
+  position: relative;
+  display: inline-block;
+  height: 160px;
+  width: 160px; }
+
+.listCharacters h2 {
+  color: blue; }

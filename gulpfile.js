@@ -2,11 +2,16 @@ var gulp = require('gulp');
 var sass = require('gulp-sass');
 var browserify = require('gulp-browserify');
 
-gulp.task('default', ['html', 'js', 'css']);
+gulp.task('default', ['html', 'templates', 'js', 'css']);
 
 gulp.task('html', function () {
     return gulp.src('./*.html')
         .pipe(gulp.dest('./public'));
+});
+
+gulp.task('templates', function () {
+    return gulp.src('./templates/*.html')
+        .pipe(gulp.dest('./public/templates'));
 });
 
 gulp.task('css', function () {
