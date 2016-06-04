@@ -1,10 +1,10 @@
-<h1>EVENTS VIEW WORKS</h1>
+<h1>EVENT</h1>
 
     <div ng-click="buyThing(hero)">
         <h2>Event Name: {{ event.title }}</h2>
         <p>Event Description: {{ event.description }}</p>
         
-        <div hero-display ng-click="buyThing(hero)" ng-repeat="hero in heroes">
+        <div class="listCharacters" hero-display ng-click="buyThing(hero)" ng-repeat="hero in heroes">
         <img ng-src="{{hero.thumbnail.path + '.' + hero.thumbnail.extension}}">
         <h2>Name: <a href ="#/select">{{ hero.name | cap }}</a></h2>
         <p>Total Events: {{ hero.events.available }}</p>

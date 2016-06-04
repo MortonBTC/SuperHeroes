@@ -30,8 +30,6 @@ app.controller('HeroListController', ['$scope', '$http', 'HeroService', function
     }, function myError(response) {
         console.log(response.statusText);
     });
-    
-    $scope.heroes = HeroService.allHeroes();
 //    console.log('youve reached the hero list');
             
     $scope.selectHero = function (hero) {
@@ -55,7 +53,7 @@ app.controller('HeroSelectController', ['$scope', '$http', 'HeroService', functi
         HeroService.addHeroes(heroData);
         $scope.heroes = HeroService.allHeroes();
         console.log(heroData); 
-        for(var k=0;k<1/*heroData.length*/;k++) {
+        for(var k=0;k<100/*heroData.length*/;k++) {
             console.log(heroData[k].events.collectionURI+"?apikey=bc9b3cb24d6a0dc5cb796ee19906f858&hash=6e9b6cd1099b19df878caf48f374cbb8&ts=1");
             (function(k){$http({
                 method :"GET",

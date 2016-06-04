@@ -2,6 +2,20 @@ body {
     background-color: aqua
 }
 
+.eventHeroes {
+    position: relative;
+    display: inline-block;
+    height: 200px;
+    width: 200px
+}
+.eventTitle {
+    font-size: 5em;
+    margin-bottom: 2em;
+}
+.eventTitle:hover { 
+    background-color: yellow;
+}
+
 .eventCharacters{
     img{
         position: relative;
@@ -10,10 +24,12 @@ body {
         width: 80px
     }
     h2{
-        color: blue;
+        position: relative;
+        display: inline-block;
     }
     p{
-        
+          position: relative;
+        display: inline;
     }
 }
 
@@ -25,9 +41,11 @@ body {
         width: 160px
     }
     h2{
-        color: blue;
+        position: relative;
+        display: inline-block;
     }
     p{
-        
+        position: relative;
+        display: inline;
     }
 }
